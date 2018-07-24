@@ -1,0 +1,58 @@
+<div class="container">
+  <ng-content></ng-content>
+  <nav class="navbar navbar-light bg-light">
+    <form class="form-inline text-center">
+      <div class="input-group">
+        <div class="input-group-prepend col-md-12 text-center">
+          <label class="form-text" id="idUserName">Username*: </label>
+          <input type="text" class="form-control" placeholder="Input your name" aria-label="Username" aria-describedby="idUserName" required>
+          <label for="inputLanguage">Language: </label>
+          <select name="language" class="form-control" required>
+            <option value="">Choose</option>
+            <option value="bash">Bash</option>
+            <option value="c">C</option>
+            <option value="csharp">C#</option>
+            <option value="cpp">C++</option>
+            <option value="css">CSS</option>
+            <option value="html">HTML</option>
+            <option value="java">Java</option>
+            <option value="javascript">JavaScript</option>
+            <option value="json">JSON</option>
+            <option value="perl">Perl</option>
+            <option value="php">PHP</option>
+            <option value="nohighlight">Plain Text</option>
+            <option value="python">Python</option>
+            <option value="ruby">Ruby</option>
+            <option value="xml">XML</option>
+           </select>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <a name="code">&nbsp;</a>
+        <textarea style="width: 100%; height: 200px;" class="form-control" name="content" placeholder="Input content what you want" required></textarea>
+      </div>
+
+      <div class="g-recaptcha" data-sitekey="6LdpA2YUAAAAALis-o36WW4rJcyxDNjRPrZsFMPV">
+        <div>
+          <div>
+            <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lfw6iYTAAAAAHzvfLe4MUfPsxAzxCEdRf0CO-PD&amp;co=aHR0cHM6Ly93d3cucGFzdGUub3JnOjQ0Mw..&amp;hl=en&amp;v=v1531759913576&amp;size=normal&amp;cb=vdxv0xrlruh5" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox">
+
+            </iframe>
+          </div>
+          <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea>
+        </div>
+      </div>
+      <script src='https://www.google.com/recaptcha/api.js' async="" defer=""></script>
+      <div class="col-md-12 text-left">
+        <table>
+          <tbody><tr>
+            <td>
+              <input type="submit" class="btn btn-success btn-sm" value="Paste Code">
+            </td>
+          </tr>
+          </tbody></table>
+        <p></p>
+      </div>
+    </form>
+  </nav>
+</div>
